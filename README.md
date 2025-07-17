@@ -1,70 +1,65 @@
-# React + TypeScript + Vite
+# Portafolio React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenido a mi portafolio web personal desarrollado con **React**, **Vite** y **TypeScript**. Este proyecto incluye animaciones con **Framer Motion**, diseño moderno con **Tailwind CSS** y modelos 3D interactivos integrados mediante **Spline**. Está desplegado utilizando **GitHub Pages** y **GitHub Actions** para lograr una integración y despliegue continuo sin complicaciones.  
+¡Siéntete libre de revisar el código o contactarme si tienes alguna pregunta! 🤝
 
-Currently, two official plugins are available:
+🔗 **Demo en vivo**: [https://stvdn.github.io/react_portfolio/](https://stvdn.github.io/react_portfolio/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Características
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- ⚛️ React con Vite para una experiencia de desarrollo rápida y moderna
+- 🛠️ TypeScript para mayor fiabilidad en el código
+- 🎨 Estilado dinámico y responsivo con Tailwind CSS
+- 🎞️ Animaciones fluidas usando Framer Motion
+- 🧊 Integración de elementos 3D con Spline
+- 📦 Despliegue estático usando GitHub Pages
+- 🔄 Automatización CI/CD con GitHub Actions
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🛠️ Clonar e Instalar el Proyecto
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Sigue estos pasos si deseas probar o modificar este portafolio localmente:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+````bash
+# 1. Clona el repositorio
+git clone https://github.com/stvdn/react_portfolio.git
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# 2. Entra al directorio del proyecto
+cd react_portfolio
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# 3. Instala las dependencias
+npm install
 
+# 4. Ejecuta el proyecto en modo desarrollo
+npm run dev
+
+---
+
+## 📦 Pasos para el Despliegue
+
+> 💡 Este repositorio usa el nombre `react_portfolio`, por lo que la ruta base en Vite debe coincidir.
+
+### 1. Habilitar GitHub Actions
+
+Habilita GitHub Actions en tu repositorio desde la pestaña **Actions** en GitHub.
+
+---
+
+### 2. Configurar la Ruta Base en Vite
+
+Edita tu archivo `vite.config.ts` para establecer la ruta base correcta (debe coincidir con el nombre del repositorio):
+
+```ts
+// vite.config.ts
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
+
+export default defineConfig({
+  base: "/react_portfolio/", // 🔧 Asegúrate que coincida con el nombre del repo
+  plugins: [react(), tailwindcss()],
+});
+````
