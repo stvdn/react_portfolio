@@ -31,8 +31,12 @@ export default function Navbar() {
 
                     {/* Social icons */}
                     <div className="flex items-center space-x-4">
-                        <FaLinkedin className="text-2xl cursor-pointer text-gray-300 hover:text-white" />
-                        <FaGithub className="text-2xl cursor-pointer text-gray-300 hover:text-white" />
+                        <a href="https://www.linkedin.com/in/stevendanny/" target="_blank" className="text-gray-300 cursor-pointer hover:text-white">
+                            <FaLinkedin className="text-2xl" />
+                        </a>
+                        <a href="https://github.com/stvdn/" target="_blank" className="text-gray-300 cursor-pointer hover:text-white">
+                            <FaGithub className="text-2xl" />
+                        </a>
                     </div>
                 </div>
 
