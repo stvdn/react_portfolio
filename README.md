@@ -23,7 +23,7 @@ Bienvenido a mi portafolio web personal desarrollado con **React**, **Vite** y *
 
 Sigue estos pasos si deseas probar o modificar este portafolio localmente:
 
-````bash
+```bash
 # 1. Clona el repositorio
 git clone https://github.com/stvdn/react_portfolio.git
 
@@ -35,6 +35,7 @@ npm install
 
 # 4. Ejecuta el proyecto en modo desarrollo
 npm run dev
+```
 
 ---
 
@@ -62,4 +63,4 @@ export default defineConfig({
   base: "/react_portfolio/", // 🔧 Asegúrate que coincida con el nombre del repo
   plugins: [react(), tailwindcss()],
 });
-````
+```
