@@ -1,11 +1,9 @@
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import video_to_mp3 from "../assets/projects/video_to_mp3.png";
+import travel_planner from "../assets/projects/travel_planner.png";
 
 export const HERO_CONTENT = `Highly adaptable software engineer with 4 years of experience in software development. My experience includes developing web applications and implementing software solutions, leveraging languages like Python, PowerShell, JavaScript, and PHP, along with frameworks such as Angular, React, Laravel, and Flask. I enjoy working in collaborative teams.`;
 
-export const ABOUT_TEXT = `I'm a software engineer based in Quito, Ecuador, with a strong background in implementing software solutions with complex business logic. Over the past 4 years, I've worked with agile teams as well as independently as a freelancer to deliver solutions across the finance, real estate, and e-commerce industries. I adapt quickly and always strive to follow best practices and standards to build scalable solutions. I adapt quickly and always strive to follow best practices and standards to build scalable solutions. I value work environments that foster continuous learning, contributing proactivity and clear communication to every project.`;
+export const ABOUT_TEXT = `I'm a software engineer based in Quito, Ecuador, with a strong background in developing software solutions that handle complex business logic. Over the past four years, I've worked both independently as a freelancer and collaboratively within agile teams to deliver robust applications across the finance, real estate, and e-commerce sectors. I prioritize clean, scalable code and consistently follow industry best practices and standards. I thrive in environments that encourage continuous learning and bring proactive communication and a solution-oriented mindset to every project.`;
 
 export const EXPERIENCES = [
   {
@@ -66,32 +64,28 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "Web Portfolio",
-    image: project1,
-    description:
-      "Portfolio website developed from scratch using Next.js and TypeScript. Integrated with GitHub Actions for CI/CD deployment.",
-    technologies: ["Next.js", "TypeScript", "GitHub Actions"],
-  },
-  {
     title: "Video to MP3 Converter",
-    image: project2,
+    image: video_to_mp3,
     description:
       "A microservices-based console application using Python, Docker, RabbitMQ, and MariaDB to convert video to MP3 format.",
     technologies: ["Python", "Docker", "RabbitMQ", "MariaDB"],
+    repo: "https://github.com/stvdn/mp3converter",
   },
   {
-    title: "Nani Boutique",
-    image: project3,
+    title: "Travel Planner",
+    image: travel_planner,
     description:
-      "E-commerce app built using React and Flask with PostgreSQL and AWS S3. Entire app containerized with Docker Compose.",
-    technologies: ["React", "Flask", "PostgreSQL", "AWS S3", "Docker Compose"],
-  },
-  {
-    title: "Hausi Mobile App",
-    image: project4,
-    description:
-      "Mobile app for property listings built with Flask and Firebase. Features include authentication, property filtering, and favorites.",
-    technologies: ["Flask", "Firebase", "Firestore", "JavaScript"],
+      "Travel planning app built with Next.js, TypeScript, and PostgreSQL, featuring 3D globe visualization and secure authentication.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "PostgreSQL",
+      "Prisma",
+      "TailwindCSS",
+      "Supabase",
+      "3D Animation",
+    ],
+    repo: "https://github.com/stvdn/travel_planner",
   },
 ];
 

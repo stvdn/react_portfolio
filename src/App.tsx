@@ -4,7 +4,7 @@ import Contact from './components/Contact'
 import Experience from './components/Experience'
 import Home from './components/Home'
 import Navbar from './components/Navbar'
-//import Projects from './components/Projects'
+import Projects from './components/Projects'
 import Technologies from './components/Technologies'
 
 function App() {
@@ -20,9 +20,7 @@ function App() {
         <About />
         <Technologies />
         <Experience />
-        {
-          //<Projects />
-        }
+        <Projects />
         <Contact />
       </div>
 

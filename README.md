@@ -5,8 +5,6 @@ Bienvenido a mi portafolio web personal desarrollado con **React**, **Vite** y *
 
 🔗 **Demo en vivo**: [https://stvdn.github.io/react_portfolio/](https://stvdn.github.io/react_portfolio/)
 
----
-
 ## 🚀 Características
 
 - ⚛️ React con Vite para una experiencia de desarrollo rápida y moderna
@@ -16,8 +14,6 @@ Bienvenido a mi portafolio web personal desarrollado con **React**, **Vite** y *
 - 🧊 Integración de elementos 3D con Spline
 - 📦 Despliegue estático usando GitHub Pages
 - 🔄 Automatización CI/CD con GitHub Actions
-
----
 
 ## 🛠️ Clonar e Instalar el Proyecto
 
@@ -37,8 +33,6 @@ npm install
 npm run dev
 ```
 
----
-
 ## 📦 Pasos para el Despliegue
 
 > 💡 Este repositorio usa el nombre `react_portfolio`, por lo que la ruta base en Vite debe coincidir.
@@ -46,8 +40,6 @@ npm run dev
 ### 1. Habilitar GitHub Actions
 
 Habilita GitHub Actions en tu repositorio desde la pestaña **Actions** en GitHub.
-
----
 
 ### 2. Configurar la Ruta Base en Vite
 
